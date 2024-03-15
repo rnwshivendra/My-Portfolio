@@ -33,17 +33,33 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
+   
 }
 
 .my-pic>img {
     border-radius: 50%;
 }
 
+#home{
+    border: 1px solid #000;
+  
+}
 
-#home {
+#home>div {
+    width: 80%;
     display: flex;
     justify-content: space-around;
     padding: 40px;
+    border: 1px solid #000;
+    margin: auto;
+}
+
+
+@media (max-width:600px){
+    #home>div{
+       display: block;
+  
+    }
 }
 
 
@@ -108,9 +124,8 @@ body {
 
 #projects>div {
     border: 1px solid #000;
-
     width: 70%;
-    margin: auto;
+    margin: 40px auto;
 }
 
 .project-no {
@@ -133,7 +148,6 @@ body {
 }
 
 .project-desc {
-   
     font-size: 12px;
 }
 
@@ -164,5 +178,10 @@ body {
 .projecrt-img {
     height: 80%;
     width: 50%;
-
 }
+
+
+
+
+
+
