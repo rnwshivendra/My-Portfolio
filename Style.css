@@ -55,12 +55,30 @@ body {
 }
 
 
-@media (max-width:600px){
-    #home>div{
-       display: block;
-  
+@media (max-width:600px) {
+    #home>div {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-pic {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+       
+    }
+    
+    .my-pic>img {
+        border-radius: 50%;
+    }
+
+    .home-intro{
+        text-align: center;
     }
 }
+
+
 
 
 /* About */
@@ -182,6 +200,54 @@ body {
 
 
 
+
+
+/* Github-Stats */
+
+#github-stats>div{
+border: 1px solid #000;
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+
+#github-stats>div>img{
+     height: 200px;
+     width: 200px;
+}
+    
+/* Contact-us */
+#contact>div{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding:20px;
+}
+
+
+#contact>div>form>input, label, textarea {
+  display: block;
+}
+
+
+.contact-info>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.contact-info>div>a{
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-info>div>a>i{
+    font-size: 10px;
+    font-weight: 600;
+    word-spacing: 10px;
+  }
 
 
 
